@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNICORD</title>
+  <style>
+    /* CSS code */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .rootDiv {
+      display: flex;
+      height: 100vh;
+    }
+
+    .column-container {
+      flex: 1;
+      background-color: #f0f0f0;
+    }
+
+    .navguild {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat-container {
+      flex: 1;
+      background-color: #ffffff;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .chat-messages {
+      overflow-y: scroll;
+      max-height: 200px;
+    }
+
+    .chat-input {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .chat-input input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .chat-input button {
+      padding: 5px 10px;
+      background-color: #7289da;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .servers {
+      flex: 1;
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .server {
+      margin-bottom: 5px;
+    }
+
+    .server p {
+      margin: 0;
+      padding: 5px;
+      background-color: #ffffff;
+      border-radius: 3px;
+    }
+
+    .server.active p {
+      background-color: #7289da;
+      color: #ffffff;
+    }
+
+    .container {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .post-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .post-actions {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .post-actions button {
+      padding: 5px 10px;
+      background-color: #7289da;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .post-content p {
+      margin: 0;
+    }
+
+    .post-footer button {
+      padding: 5px 10px;
+      background-color: #7289da;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>Please enable JavaScript to access this website.</noscript>
+  <div class="rootDiv">
+    <div class="column-container"></div>
+    <div class="navguild">
+      <div class="guild-opener">
+        <div class="navGuildItems"></div>
+      </div>
+      <div class="chat-container">
+        <div class="chat-messages" id="chat-messages">
+          <!-- Messages will be appended here -->
+        </div>
+        <div class="chat-input">
+          <input type="text" id="message-input" placeholder="Type your message...">
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+      <div class="navs">
+        <p class="serverName">NUST UNIVERSITY</p>
+      </div>
+    </div>
+    <div class="servers">
+      <div class="homebutton">
+        <svg class="homeIcon" aria-hidden="false" width="28" height="20" viewBox="0 0 28 20">
+          <img onclick="document.location='server.html'" src="pp1.png" alt="home" class="home">
+        </svg>
+      </div>
+      <hr class="server-divider" />
+      <div class="server active">
+        <p class="servericon">SN</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S1</p>
+      </div>
+      <div class="server">
+        <p class="servericon unread">S2</p>
+      </div>
+      <div class="server">
+        <p class="servericon unread">S3</p>
+      </div>
+      <div class="server">
+        <p class="servericon unread">S4</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S5</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S6</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S7</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S8</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S9</p>
+      </div>
+      <div class="server">
+        <p class="servericon">S10</p>
+      </div>
+      <div class="server back">
+        <p class="inviteButton">H</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="post-container">
+        <div class="post-header">
+          <img src="user-avatar.jpg" alt="User Avatar">
+          <h2>John Doe</h2>
+        </div>
+        <div class="post-actions">
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+          <button>Add Video</button>
+        </div>
+        <div class="post-content">
+          <p>This is a sample post content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="post-footer">
+          <button>View Comments</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

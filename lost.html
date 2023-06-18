@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="https://t4.ftcdn.net/jpg/01/96/09/43/360_F_196094300_97fBZuVN0Ogw9R3RAV2aWVwpajLtM9JM.jpg" type="image/x-icon"/>
+    <title>Lost and Found</title>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lost.css">
+    <script src="lost.js" defer></script>
+    
+</head>
+<body>
+  <div class="btn">
+    <button onclick="document.location='server.html'" >Back To Main</button>
+</div>
+    <div class="chat-container">
+        <div class="chat-box" id="posts-container"></div>
+      </div>
+    
+      <form id="post-form" enctype="multipart/form-data">
+        <div class="chat-input">
+          <textarea id="post-content" placeholder="Write your post..." required></textarea>
+          <input type="file" id="post-media" accept="image/*, video/*">
+          <input type="submit" value="Post">
+        </div>
+      </form> 
+</body>
+</html>

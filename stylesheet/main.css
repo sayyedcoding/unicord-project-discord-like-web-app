@@ -1,0 +1,328 @@
+/*Css For header Part of Website*/
+body{
+  background-color: #926666;
+}
+#header {
+    background: #111111;
+    color: white;
+    font-size: 14px;
+    height: 42px;
+}
+  #header a {
+      color: white;
+  }
+  #header a:hover{
+    color: gray;
+  }
+  #header .dropdown li a {
+      color: black;
+  }
+  #header .nav>li>a{
+    padding: 10px;
+  }
+  #header .navbar-toggle span {
+    background: white;
+  }
+  #header .line{
+    border-right: 1px solid #bbbbbb;
+    padding: 0 15px;
+    margin: 15px;
+    margin-left: -5px;
+  }
+  #header #username{
+    margin: 0 -20px;
+  }
+  #header ul .glyphicon {
+      font-size: 20px;
+      color: white;
+  }
+  #header ul .glyphicon:hover {
+      font-size: 20px;
+      color: black;
+  }
+  #header input[type=text] {
+    border: 0px Solid Black;
+    padding: 3px 10px;
+    width: 380px;
+    height: 28px;
+    margin: 3px -15px;
+    border-radius: 2px 0 0 2px;
+  }
+  #header .search {
+    border: 0px Solid Black;
+    width: 50px;
+    height: 28px;
+    margin-left: -5px;
+    border-radius: 0px;
+    border-radius: 0 2px 2px 0;
+  }
+
+  #topnavbar .topbadge{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    background: red;
+    color: white;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 2px;
+  }
+  /*header Section Css End Here*/
+
+  /*Main Body Css Start From Here*/
+#wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  #menu,
+  #sidebar {
+    position: absolute;
+    top: 48px;
+    height: 600px;
+    background-color: #e9ebdd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #main{
+    position: relative;
+    top: 42px;
+    height: 600px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #wrapper {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .list-heading {
+      padding: 20px 15px 0 15px;
+      font-size: 11px;
+      text-shadow: 2px 2px 2px 2px gray;
+  }
+  #header .Sbadge{
+    background: ##3b5998;
+    color: White;
+  }
+  #menu li:hover{
+    background-color: #f6f7f9;
+    border-radius: 1px solid #dddfe2;
+    color: gray;
+    font-weight: bold;
+  }
+  .focus{
+    background-color: #f6f7f9;
+    border-radius: 1px solid #dddfe2;
+    color: BLACK;
+    font-weight: bold;
+  }
+  #menu .Sbadge{
+    background-color: rgba(255, 255, 255, 0);
+    color: gray;
+    padding: 5px;
+    float: right;
+    font-size: 10px;
+  }
+  #menu a{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(35, 34, 36);
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+  }
+  #menu #more a {
+    color: #3b5998;
+  }
+  #menu #more a:hover{
+    text-decoration: underline;
+  }
+  #create_section a{
+    font-size: 10px;
+    color: #3b5998;
+  }
+  #create_section a:hover{
+    text-decoration: underline;
+  }
+
+  .panel-body .glyphicon {
+      margin-left: 10px;
+      margin-right: 4px;
+  }
+    .text-post {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.image-post {
+    margin-bottom: 15px;
+}
+#main {
+    overflow: auto;
+}
+#main::-webkit-scrollbar {
+  display: none;
+}
+#newpost ul li .fa {
+    font-size: 14px;
+    margin-right: 5px;
+    color: gray;
+}
+#newpost ul li {
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
+#newpost ul li a{
+    font-size: 13px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+#newpost input{
+  width: 450px;
+  height: 60px;
+  border: 0px;
+  margin: 5px;
+  font-size: 15px;
+}
+.borderline{
+  border-right: 1px solid #bbbbbb;
+}
+.topborder{
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+#newpost .round{
+  border: 0px;
+  border-radius: 15px;
+  color: black;
+  background: rgb(220, 220, 220);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#newpost .post{
+  border: 0px;
+  color: white;
+  background: #3b5998;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 2px;
+}
+#newpost .nav-tabs{
+  border: 0px;
+}
+#newpost .glyphicon{
+  font-size: 14px;
+  margin-right: 5px;
+  color: #3b5998;
+}
+#newpost img{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+small{
+  font-size: 8px;
+  display: block;
+  margin-left: 35px;
+}
+.postimage{
+  align-items: center;
+  display: inline;
+  width: 49%;
+}
+.postimage:hover{
+  display: inline;
+  border: 2px solid gray;
+  width: 49%;
+}
+
+.rightside{
+  padding: 10px;
+  display: block;
+  background: white;
+  margin-top: -5px;
+  border-radius: 3px;
+}
+.rightside .fa {
+  padding-right: 5px;
+  font-size: 15px;
+}
+.Commentbox{
+  width: 90%;
+  height: 30px;
+}
+small a{
+  margin: -5px 5px;
+
+}
+.panel-footer small{
+  margin-top: -12px;
+}
+.panel-footer img{
+  margin: 5px;
+}
+#tranding #rightsideicon{
+  padding: 0px;
+  color: #3b5998;
+  float: right;
+}
+#tranding #trandingbody{
+  margin-top: 10px;
+}
+#tranding a{
+  padding: 3px;
+  margin: 0px;
+}
+#sidebar #myCarousel img{
+  height: 150px;
+  width: 100%;
+}
+.likepage{
+  width: 110px;
+  height: 24px;
+  background: #ced0d4;
+  border: 1px solid gray;
+  color: black;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+.loadmore{
+  padding: 8px;
+  border-radius: 5px;
+  background: #3b5998;
+  font-size: 18px;
+}
+/*Class For Styling Profile Pic Of User*/
+.ProfilePic {
+  width: 25px;
+  height: 25px;
+}
+#map {
+height: 300px;
+width: 100%;
+border-radius: 10px;
+}
+/*css for new post*/
+.panel-default .fa{
+  font-size: 14px;
+  padding: 0 5px 0 15px;
+}
+.topborder a{
+  text-decoration: none;
+  color: black;
+}
+.panel .panel-heading{
+  background: white;
+  border: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px
+}
+.panel-title>a{
+  color: #3b5998;
+  font-weight: bold;
+}

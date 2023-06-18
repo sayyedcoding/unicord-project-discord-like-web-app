@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/820/953/png-transparent-love-hearts-love-hearts-red-heart-love-heart-computer-icons-thumbnail.png" type="image/x-icon"/>
+    
+    <title>Confession Page</title>
+    <link rel="stylesheet" type="text/css" href="confession.css">
+</head>
+<body>
+    <div class="btn">
+        <button onclick="document.location='server.html'" >Back To Main</button>
+    </div>
+  <h1>Confessions</h1>
+  <div class="img">
+  <img src="1397750 (1).jpg" alt="1">
+  </div>
+    <div class="container">
+        <div id="confession-list"></div>
+        <form id="confession-form">
+            <input type="text" id="name-input" placeholder="Name (Optional)">
+            <textarea id="confession-input" placeholder="Write your confession..."></textarea>
+            <input type="file" id="file-input" accept="image/*, video/*">
+            <button onclick="window.alert('Ghar mein tujhy Khana ni pochty or tu Confession Dalny agaya nikal pehli pursat mein')" type="submit">Submit</button>
+            
+        </form>
+    </div>
+    
+    <script src="confession.js"></script>
+</body>
+</html>
